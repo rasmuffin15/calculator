@@ -19,7 +19,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Compiling and building'
-                sh 'go build'
+                sh 'go build go build -o golang_calculator'
             }
         }
 
